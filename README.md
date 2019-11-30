@@ -5,7 +5,7 @@ my idea was to create a form where the user can enter the data of an animal (Use
 {
 "firstname":"stephan",
 "lastname":"the lion",
-"date_ofmedicalcheck":"2.10-2019",
+"date_ofmedicalcheck":"2.10.2019",
 "age":"6"
 },
 when the user fills the form, he clicks on send button and the data shal be display in a table:
