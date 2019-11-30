@@ -1,0 +1,231 @@
+
+<!DOCTYPE html PUBLIC "-//W3c//DTD XHTML 1.0 strict // EN" 
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html lang="com">
+
+<head> <!en tete de ma maquette ..>
+    <meta charset="utf-8"/>
+	<link rel="stylesheet" href="zoo.css"/>
+    <title>ZOOanimals</title>
+	
+	<script src="https://kit.fontawesome.com/7c496ea9f4.js" crossorigin="anonymous"></script> 
+	
+	 <!-- 
+		<script  type="text/javascript">
+		 
+		 $(function(){
+		$("#myForm").submit(function(){
+		
+		first=$(this).find("input[name=firstname]").val(); //  alle eingabe von Formular
+		last=$(this).find("input[name=lastname]").val();
+		lastcheck=$(this).find("input[name=date_ofmedicalcheck]").val();
+		age=$(this).find("input[name=age]").val();
+		
+		url=$(this).attr("action");
+		
+		//  post request to becomme the input
+		$.post( url,{firstname:first,lastname:last,date_ofmedicalcheck:lastcheck,age:age}
+		,function(data){
+			if(data.erreur=="no"){}
+			 $("#myForm").fadeout();
+			 $("#myForm").before(data.retour);
+			 
+			
+			} ,"json");
+		return false;
+	});
+		});
+		</script> -->
+</head>
+
+
+ <body>
+ 
+ <!-- Anfang der header -->
+ <header>
+ 
+ <div class=" logo">
+ <h1 class=" logtext"><span>Zoo</span>animals</h1> </div>
+ <i class="fas fa-align-justify  menu-toggle"></i>
+ 
+ 
+ <ul class="nav">
+        <li><a href="../LiferLogone.html">Accueil</a></li>
+		<li><a href="../Partner/Patner.html">Partner</a></li>  
+        <li><a href="registerResto/regisR.html">Log in </a> </li>
+		
+		<li>
+		<a href="#">
+		<i class="fas fa-user"></i>
+		Account
+		<i class="fas fa-chevron-down" style="font-size:.8em"></i>
+		</a>
+			  
+				   <ul class="dropdown">
+				   <li><a href="#">Sign Up</a></li>
+				  
+                  <li><a href="#" class="logout">Log in </a></li> 
+				
+				 
+				   </ul>		   
+		</li>
+		
+		<li><a href="registerResto/regisR.html">Help </a> </li>
+		
+	</ul>	   
+				  
+ </header>
+ 
+ 
+ <div id="container"> 
+ jhsgsgsggss
+ 
+ <div class="main" id="zoo" >
+ 
+   <div id="search">
+  <form name="formeauto" method="post" action="">
+  <input  id="motcle" type="text" name="motcle" placeholder="seach pro animal name"/>
+  <input  class="btstyle" type="submit" name="btsubmit" value="seach"/>
+  </form>
+ 
+   </div>
+ 
+  
+  <div id="formular">
+ 
+  <form method="post" action=" " id="myForm" name=" myForm">
+ 
+  <label > firstname:
+  <input id="myName"  placeholder="paul"  name=" firstname" value=" " >
+  </label>
+
+  <label> lastname:
+<input id="mylastmane"  placeholder="the peguin" name="lastname" value=" "  >   
+  </label>
+  
+    <label> date_ofmedicalcheck:
+  <input id="lastcheck"  placeholder="2.10.2019" name="date_ofmedicalcheck"  value=" " >   
+  </label>
+  
+   <label> age:
+<input id="myage"   placeholder="6" name="age" value="" >   
+  </label>
+           
+  <input type="submit" id="submit" value="Send!" >
+</form>
+   </div>
+   
+   
+   <table>
+                <thead>
+                    <tr>
+                        <th>firstname</th>
+                        <th>lastname</th>
+                        <th>date_ofmedicalcheck:</th>
+                        <th>age</th>
+                    </tr>
+                </thead>
+				
+               <tbody id="tbody">
+               
+               </tbody>
+				 </table>
+
+ </div>
+ 
+
+   
+   
+ </div>
+ 
+ </div>
+ 
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.6.10/vue.min.js"></script>   <!-- vuejs librearie-->
+ 
+ <script
+  src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"></script>                                           <!-- jquery   librearie-->
+
+   <script  type="text/javascript" src="zoo.js"></script> <!-- bind with a javascript file      -->
+ 
+ 
+ 
+ <!-- Anfang der Footer -->
+ 
+ <footer id="footer">
+ 
+    <div class="footer-content">
+	
+	   <div class="footer-sec about">
+	   
+	   <h1 class="logo-text"><span>Zoo</span>animal</h1>
+	   
+	   <p>
+   we try to organize the animals of a zoo. you can see a individual animals (Paul the penguin for example ) 
+  and you can track the date of each animal's LAST medical check.
+
+	   </p>
+	   
+     <div class="contact">
+	 
+	 <span><i class="fas fa-phone-volume"></i> &nbsp; +49 15752028020</span>
+	 <span><i class="fas fa-at"></i> &nbsp; kevin.rostand@yahoo.fr</span>
+       </div>
+	   
+	   <div class="social">
+
+                <a href="#"><i class="fab fa-facebook-square"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-twitter-square"></i></a>
+	 
+       </div>
+	   
+	   </div>
+	   
+	   <div class="footer-sec link">
+	   
+	    <h1> Quick link</h1>
+		<br>
+		
+		<ul>
+		<a href="#"><li>Accueil</li></a>
+		<a href="#"><li>Team</li></a>
+		
+		<a href="#"><li>krass</li></a>
+		</ul>
+ 
+       </div>
+	   
+	   <div class="footer-sec contact-form">
+	   
+	   <h1>contact us </h1>
+	   <br>
+	    <form method =" post " action ="index.html ">
+		
+		<input type="email"  name="email" class="text-input contact-input"  placeholder="your email address...">
+		
+		<textarea  name="message" id="" class="text-input contact-input" placeholder="your email address..."></textarea>
+		
+		<button type="submit" class="btn btn-big class-btn">
+		<i class="fas fa-envelope"></i>
+		send
+		</button>
+		
+		</form>
+ 
+       </div>
+ 
+    </div>
+  
+     <div class="footer-bottom">
+         &copy;ZOO| Design by Arnauld 
+     </div>
+ 
+ </footer>
+ 
+ 
+ 
+ 
+ </body>
+ </html>
