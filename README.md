@@ -8,7 +8,7 @@ my idea was to create a form where the user can enter the data of an animal (Use
 "date_ofmedicalcheck":"2.10.2019",
 "age":"6"
 },
-when the user fills the form, he clicks on send button and the data shal be display in a table:
+when the user fills the form, he clicks on send button and the data shall be display in a table:
 in the table create delete and edit buttons:
 -when the user clicks on delete button, the useranimal is deleted in the table 
 -when he clicks on edit button  he can update the Useranimal's data
