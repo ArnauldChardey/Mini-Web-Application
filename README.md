@@ -1,7 +1,7 @@
 # Mini-Web-Application
 in this project I used html ,css, jquery und javascript .
 
-my idea was to create a form where the user can enter the data of an animal (Useranimal has the following data: firstname,  lastname,LAST medical check and age) ex : Stephan ,the lion 3.02.2019 8 
+my idea was to create a form where the user can enter the data of an animal (Useranimal has the following data: firstname,  lastname,LAST medical check and age) ex : Stephan ,the lion ,3.02.2019 ,8 
 {
 "firstname":"stephan",
 "lastname":"the lion",
